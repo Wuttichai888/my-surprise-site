@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>ของขวัญจากใจ</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
   <style>
     * {
@@ -23,26 +23,27 @@
 
     .container {
       background: rgba(255, 255, 255, 0.95);
-      padding: 40px 20px;
+      padding: 30px 20px;
       border-radius: 24px;
       box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
       text-align: center;
-      max-width: 450px;
-      width: 90%;
+      width: 100%;
+      max-width: 420px;
+      margin: 20px;
     }
 
     .image {
-      max-width: 300px;
-      width: 90%;
+      width: 100%;
+      max-width: 280px;
       border-radius: 16px;
       box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-      margin: 20px 0;
+      margin: 20px auto;
     }
 
     .message {
-      font-size: 20px;
+      font-size: 18px;
       color: #444;
-      margin-bottom: 30px;
+      margin-bottom: 25px;
       line-height: 1.6;
     }
 
@@ -51,16 +52,29 @@
       color: white;
       border: none;
       padding: 12px 24px;
-      margin: 10px 8px;
+      margin: 8px;
       font-size: 16px;
       border-radius: 25px;
       cursor: pointer;
       transition: background-color 0.3s ease;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 200px;
     }
 
     button:hover {
       background-color: #ff85c1;
+    }
+
+    @media (max-width: 400px) {
+      .message {
+        font-size: 16px;
+      }
+
+      button {
+        font-size: 15px;
+        padding: 10px 20px;
+      }
     }
   </style>
 </head>
