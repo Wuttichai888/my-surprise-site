@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <title>ถึงน้องไจด้า</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: #fff0f6;
+      font-family: 'Kanit', sans-serif, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      position: relative;
+      background: #fff;
+      width: 350px;
+      padding: 40px 30px 30px 30px;
+      border-radius: 10px;
+      box-shadow: 0 8px 25px rgba(255, 105, 180, 0.3);
+      text-align: center;
+    }
+
+    .container::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 175px solid transparent;
+      border-right: 175px solid transparent;
+      border-bottom: 70px solid #ffb6c1;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .container::after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50px;
+      height: 5px;
+      background: #ff69b4;
+      border-radius: 2.5px;
+    }
+
+    h1 {
+      margin-top: 50px;
+      color: #e91e63;
+      font-size: 2rem;
+    }
+
+    .message {
+      margin: 20px 0 30px 0;
+      font-size: 1.1rem;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    button {
+      background: #e91e63;
+      color: white;
+      border: none;
+      padding: 12px 28px;
+      border-radius: 30px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      box-shadow: 0 6px 15px rgba(233, 30, 99, 0.4);
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #c2185b;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>ถึงน้องไจด้า 💖</h1>
+    <p class="message">
+      ไม่รู้ว่าเหนื่อยจากการเดินทางแค่ไหน แต่รู้ไว้นะว่ามีคนรออยู่ตรงนี้<br/>
+      พร้อมกอดอุ่น ๆ ให้เธอเสมอเยย... รักที่สุดเลยนะ🤗
+    </p>
+    <button onclick="goNext()">กดเลยสิจ๊ะ</button>
+  </div>
+
+  <script>
+    function goNext() {
+      window.location.href = 'flowers.html';  // เปลี่ยนไปหน้า flowers.html
+    }
+  </script>
+</body>
+</html>
